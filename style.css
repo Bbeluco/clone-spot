@@ -1,0 +1,49 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+.sidebar{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height:135px;
+    width:165px;
+    background-color:rgb(31, 28, 28);
+    /*position:fixed!important;*/
+    z-index:1;
+    overflow:hidden;
+}
+
+.bar-item{
+    font-weight: bold;
+    padding: 8px 16px;
+    border:none;
+    display:block;
+    width:100%;
+    text-align:left;
+    white-space:normal;
+    float:none;
+    outline:0;
+    cursor:pointer;
+}
+
+.btn {
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.582);
+    background-color:inherit;
+    text-align:left;
+    white-space:nowrap;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+}
+
+.btn:hover {
+    color: white;
+}
