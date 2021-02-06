@@ -79,3 +79,15 @@
 h4 {
     margin-bottom: 0;
 }
+
+.library-scrollbar::-webkit-scrollbar {
+    background-color: rgb(49, 44, 44);
+}
+
+.library-scrollbar::-webkit-scrollbar-thumb {
+    background: gray;
+}
+
+.library-scrollbar::-webkit-scrollbar-button {
+    background: red;
+}
