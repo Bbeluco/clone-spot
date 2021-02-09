@@ -9,7 +9,9 @@ require('dotenv').config();
     request({url: urlPlaylist, method: 'GET', headers: {'Authorization': token, 'Content-Type': 'application/json'}},
         function (error, response, body) {
             const result = JSON.parse(body)
-            console.log(result.items)
+            for(i=0; i < result.items.length; i++) {
+                console.log(result.items[i].name)
+            }
         })
 })()
 
