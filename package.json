@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/Bbeluco/clone-spot#readme",
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "electron": "^11.2.3"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
   }
 }
