@@ -115,7 +115,19 @@ h4 {
 }
 
 .closePopUp {
-    
+    position: absolute;
+    top: 8px;
+    left: 460px;
+    background-color:rgb(31, 28, 28);
+    color: rgba(255, 255, 255, 0.719);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.closePopUp:hover {
+    color: white;
 }
 
 .playlist-input-name, .playlist-input-description{
