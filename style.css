@@ -131,6 +131,21 @@ h4 {
     color: rgba(255, 255, 255, 0.719);
 }
 
+.playlist-create-button {
+    border-radius: 30px;
+    font-weight: bolder;
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(60, 165, 60);
+    letter-spacing: .2rem;
+}
+
 textarea {
     resize: none;
 }
