@@ -16,7 +16,8 @@ function createPlaylistName(name){
     const playlist = document.querySelector('#playlist');
     const a = document.createElement('a');
     a.innerHTML = name;
-    a.className = 'bar-library btn';
+    a.className = 'playlist-name btn';
+    a.href = '#' //Logo sera substituido pelo link da pagina
     playlist.appendChild(a)    
 }
 

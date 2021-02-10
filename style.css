@@ -40,7 +40,7 @@
     color:  rgba(255, 255, 255, 0.719);
 }
 
-.bar-library {
+.bar-library, .playlist-name {
     font-weight:bold;
     font-size: 14px;
     padding: 8px 16px;
@@ -74,6 +74,10 @@
 
 .btn:hover {
     color: white;
+}
+
+.playlist-name {
+    font-weight: 600;
 }
 
 h4 {
