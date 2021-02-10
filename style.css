@@ -144,6 +144,8 @@ h4 {
     color: white;
     background-color: rgb(60, 165, 60);
     letter-spacing: .2rem;
+    outline: none;
+    border: none;
 }
 
 textarea {
