@@ -100,3 +100,14 @@ h4 {
 .library-scrollbar::-webkit-scrollbar-thumb {
     background: gray;
 }
+
+.popup{
+    width:500px;
+    height:300px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-150px;
+    margin-left:-250px;
+    background-color: rgb(31, 28, 28);
+}
