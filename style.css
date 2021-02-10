@@ -152,6 +152,12 @@ h4 {
     background-color: rgb(71, 187, 71)
 }
 
+.playlist-create-button:active {
+    position: relative;
+    top: 2px;
+    background-color: #2b4f2b
+}
+
 textarea {
     resize: none;
 }
