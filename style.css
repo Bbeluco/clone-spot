@@ -2,7 +2,7 @@
     font-family: 'Oswald', sans-serif;
 }
 
-.sidebar, .sidebar-lib{
+.sidebar, .sidebar-lib, .sidebar-playlist{
     position: absolute;
     left: 0px;
     top: 0px;
@@ -20,7 +20,11 @@
     overflow-y: scroll;
 }
 
-.bar-item, .bar-tittle {
+.sidebar-playlist {
+    top: 435px;
+}
+
+.bar-item, .bar-tittle, .bar-playlist {
     margin-top: 0%;
     font-weight: bolder;
     padding: 8px 16px;
@@ -78,6 +82,11 @@
 
 .playlist-name {
     font-weight: 600;
+}
+
+.bar-playlist {
+    padding: 50px 30px;
+    
 }
 
 h4 {
