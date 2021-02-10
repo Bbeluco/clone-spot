@@ -110,4 +110,18 @@ h4 {
     margin-top:-150px;
     margin-left:-250px;
     background-color: rgb(31, 28, 28);
+    border-radius: 10px;
+}
+
+.playlist-input {
+    margin: 10px 50px;
+    width: 400px;
+    height: 30px;
+    display: block;
+}
+
+.playlist-tittle {
+    margin: 10px 50px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.719);
 }
