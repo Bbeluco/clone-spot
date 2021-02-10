@@ -103,25 +103,34 @@ h4 {
 
 .popup{
     width:500px;
-    height:300px;
+    height:350px;
     position:absolute;
     top:50%;
     left:50%;
-    margin-top:-150px;
+    margin-top:-175px;
     margin-left:-250px;
     background-color: rgb(31, 28, 28);
     border-radius: 10px;
 }
 
-.playlist-input {
+.playlist-input-name, .playlist-input-description{
     margin: 10px 50px;
     width: 400px;
     height: 30px;
     display: block;
+    outline: 0;
+    font-family: monospace;
 }
+.playlist-input-description {
+    height: 100px;
+} 
 
 .playlist-tittle {
     margin: 10px 50px;
     text-align: center;
     color: rgba(255, 255, 255, 0.719);
+}
+
+textarea {
+    resize: none;
 }
