@@ -9,7 +9,7 @@ function hiddenCreatePlaylist() {
     document.querySelector('.popup').style.display = 'none';
 }
 
-function createPlaylist() {
+async function createPlaylist() {
     let name = document.querySelector('#name').value;
     let description = document.querySelector('#description').value;
 
@@ -43,8 +43,13 @@ function createPlaylist() {
 
     name = '';
     description = '';
-    getPlaylist();
     document.querySelector('.popup').style.display = 'none';
+    await sleep(100);
+    getPlaylist();
+}
+
+function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 document.getElementById('description')
