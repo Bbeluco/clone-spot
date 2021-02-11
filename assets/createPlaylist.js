@@ -1,6 +1,7 @@
 const https = require('https');
 require('dotenv').config();
-getPlaylist = require('./getPlaylist');
+
+require('./getPlaylist');
 
 function showCreatePlaylist() {
     document.querySelector('.popup').style.display = 'block';
@@ -45,7 +46,6 @@ function createPlaylist() {
     name = '';
     description = '';
     document.querySelector('.popup').style.display = 'none';
-    getPlaylist();
 }
 
 document.getElementById('description')
