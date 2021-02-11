@@ -1,4 +1,4 @@
-request = require('request');
+const https = require('https');
 require('dotenv').config();
 
 function showCreatePlaylist() {
@@ -17,16 +17,32 @@ function createPlaylist() {
         document.querySelector('.errorText').style.display = 'block';
     }
 
-    const urlPlaylist = 'https://api.spotify.com/v1/me/playlists';
+    const userId = 'beluc0';
     const token = `Bearer ${process.env.TOKEN}`;
-    request1({ url: urlPlaylist, method: 'GET', headers: { Authorization: token, 'Content-Type': 'application/json' } },
-        (error, response, body) => {
-            if (error) return;
-            const result = JSON.parse(body);
-            for (let i = 0; i < result.items.length; i++) {
-                createPlaylistName(result.items[i].name);
-            }
-        });
+    const postData = JSON.stringify({ name: `"${name}"`, description: `"${description}"` });
+
+    const options = {
+        hostname: 'api.spotify.com',
+        path: `/v1/users/${userId}/playlists`,
+        method: 'POST',
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json',
+            Authorization: token,
+        },
+    };
+
+    const req = https.request(options, (res) => {
+        console.log(`STATUS: ${res.statusCode}`);
+        console.log(`HEADERS: ${JSON.stringify(res.headers)}`);
+    });
+
+    req.on('error', (e) => {
+        console.error(`problem with request: ${e.message}`);
+    });
+
+    req.write(postData);
+    req.end();
 }
 
 document.getElementById('description')
