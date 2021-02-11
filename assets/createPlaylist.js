@@ -8,7 +8,10 @@ function hiddenCreatePlaylist() {
 
 function createPlaylist() {
     const name = document.querySelector('#name').value
+    console.log(name)
     if(!name) {
-        const errorText = document.querySelector('.errorText')
+        document.querySelector('.errorText').style.display = "block";
+        return
     }
+
 }

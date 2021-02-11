@@ -185,5 +185,6 @@ textarea {
     font-size: 18px;
     color: red;
     left: 100px;
-    margin: 0px
+    margin: 0px;
+    display: none;
 }
