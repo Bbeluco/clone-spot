@@ -10,6 +10,7 @@ function getPlaylist() {
             const result = JSON.parse(body);
             removeAllPlaylistItems();
             for (let i = 0; i < result.items.length; i++) {
+                console.log('os items acabaram de ser adicionados');
                 createPlaylistName(result.items[i].name);
             }
         });
@@ -31,4 +32,4 @@ function getPlaylist() {
 }
 getPlaylist();
 
-module.exports = getPlaylist;
+module.exports;
