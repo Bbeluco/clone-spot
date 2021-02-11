@@ -10,8 +10,8 @@ function hiddenCreatePlaylist() {
 }
 
 function createPlaylist() {
-    const name = document.querySelector('#name').value;
-    const description = document.querySelector('#description').value;
+    let name = document.querySelector('#name').value;
+    let description = document.querySelector('#description').value;
 
     if (!name) {
         document.querySelector('.errorText').style.display = 'block';
@@ -19,7 +19,7 @@ function createPlaylist() {
 
     const userId = 'beluc0';
     const token = `Bearer ${process.env.TOKEN}`;
-    const postData = JSON.stringify({ name: `"${name}"`, description: `"${description}"` });
+    const postData = JSON.stringify({ name: `${name}`, description: `${description}` });
 
     const options = {
         hostname: 'api.spotify.com',
@@ -40,6 +40,10 @@ function createPlaylist() {
 
     req.write(postData);
     req.end();
+
+    name = '';
+    description = '';
+    document.querySelector('.popup').style.display = 'none';
 }
 
 document.getElementById('description')
