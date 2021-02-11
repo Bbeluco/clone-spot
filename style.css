@@ -178,3 +178,12 @@ h4 {
 textarea {
     resize: none;
 }
+
+.errorText {
+    position: absolute;
+    padding-top: 3px;
+    font-size: 18px;
+    color: red;
+    left: 100px;
+    margin: 0px
+}
