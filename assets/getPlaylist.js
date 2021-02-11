@@ -1,4 +1,4 @@
-const request = require('request');
+let request = require('request'); /* eslint-disable-line */
 require('dotenv').config();
 
 const urlPlaylist = 'https://api.spotify.com/v1/me/playlists';

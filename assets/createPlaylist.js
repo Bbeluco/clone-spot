@@ -1,3 +1,4 @@
+request = require('request');
 require('dotenv').config();
 
 function showCreatePlaylist() {
@@ -16,7 +17,16 @@ function createPlaylist() {
         document.querySelector('.errorText').style.display = 'block';
     }
 
-    console.log(name, description);
+    const urlPlaylist = 'https://api.spotify.com/v1/me/playlists';
+    const token = `Bearer ${process.env.TOKEN}`;
+    request1({ url: urlPlaylist, method: 'GET', headers: { Authorization: token, 'Content-Type': 'application/json' } },
+        (error, response, body) => {
+            if (error) return;
+            const result = JSON.parse(body);
+            for (let i = 0; i < result.items.length; i++) {
+                createPlaylistName(result.items[i].name);
+            }
+        });
 }
 
 document.getElementById('description')
