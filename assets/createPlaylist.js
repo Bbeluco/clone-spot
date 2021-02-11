@@ -1,4 +1,3 @@
-const request = require('request');
 require('dotenv').config();
 
 function showCreatePlaylist() {
@@ -11,9 +10,13 @@ function hiddenCreatePlaylist() {
 
 function createPlaylist() {
     const name = document.querySelector('#name').value;
+    const description = document.querySelector('#description').value;
+
     if (!name) {
         document.querySelector('.errorText').style.display = 'block';
     }
+
+    console.log(name, description);
 }
 
 document.getElementById('description')

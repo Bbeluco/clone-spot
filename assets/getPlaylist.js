@@ -7,7 +7,7 @@ request({ url: urlPlaylist, method: 'GET', headers: { Authorization: token, 'Con
     (error, response, body) => {
         if (error) return;
         const result = JSON.parse(body);
-        for (i = 0; i < result.items.length; i++) {
+        for (let i = 0; i < result.items.length; i++) {
             createPlaylistName(result.items[i].name);
         }
     });

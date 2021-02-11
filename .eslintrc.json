@@ -13,6 +13,8 @@
     },
     "rules": {
         "no-unused-vars": "off",
-        "indent": ["error", 4]
+        "indent": ["error", 4],
+        "no-plusplus": "off",
+        "no-use-before-define": "off"
     }
 }
