@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="app">
+      <h1>Hi, i'm starting to editing app.js :rocket:</h1>
     </div>
   );
 }
