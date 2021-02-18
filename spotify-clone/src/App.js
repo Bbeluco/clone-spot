@@ -6,9 +6,10 @@ import { getTokenFromUrl } from './spotify';
 function App() {
   //based on a given condition run this piece of code
   useEffect(() => {
-    const token = getTokenFromUrl();
+    const hash = getTokenFromUrl();
     window.location.hash = '';
-    console.log('Your token is >>> ', token.access_token)
+    const token = hash.access_token
+    console.log('Your token is >>> ', token)
   }, []);
 
   return (
