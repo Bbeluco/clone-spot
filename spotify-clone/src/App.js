@@ -20,9 +20,13 @@ function App() {
 
   return (
     <div className="app">
-      {/*Sporify Logo*/}
-      {/*Login with Spotify */}
-      <Login />
+      {
+        token ? (
+          <h1>I'm logged in</h1>
+        ) : (
+          <Login />
+        )
+      }
     </div>
   );
 }
