@@ -37,13 +37,11 @@ function App() {
 
   }, []);
   
-  console.log('user ', user)
-  console.log('Your token is >>> ', token)
   return (
     <div className="app">
       {
         token ? (
-          <Player />
+          <Player spotify={spotify} />
         ) : (
           <Login />
         )
