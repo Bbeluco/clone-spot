@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Player() {
+function Player({ spotify }) {
     return (
         <div>
             <h1>i'm logged in</h1>
