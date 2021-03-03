@@ -42,3 +42,19 @@
     margin-right: 20px
 }
 
+.footer_green {
+    color: #1ed15e;
+}
+
+.footer_songInfo > h4 {
+    margin-bottom: 5px;
+}
+
+.footer_songInfo > p {
+    margin-bottom: 12px;
+}
+
+.footer_icon:hover, .footer_green:hover{
+    transition: transform 200ms ease-in-out;
+    transform: scale(1.2) !important;
+}
