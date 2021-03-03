@@ -14,7 +14,11 @@ function Footer() {
     return(
         <div class="footer">
             <div className="footer_left">
-                <p>i'm the left</p>
+                <img className="album_cover" src="" alt=""/>
+                <div className="footer_songInfo">
+                    <p>Agua rosa</p>
+                    <p>Bbeluco</p>
+                </div>
             </div>
 
             <div className="footer_center">

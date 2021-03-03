@@ -11,6 +11,10 @@
 
 .footer_left {
     flex: 0.3;
+    display: flex;
+    align-items: center;
+    color:white;
+    width: 300px
 }
 
 .footer_center {
@@ -30,3 +34,11 @@
     color: white;
     justify-content: space-between;
 }
+
+.album_cover {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    margin-right: 20px
+}
+
