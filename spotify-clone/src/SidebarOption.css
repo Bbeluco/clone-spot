@@ -1,4 +1,6 @@
 .sidebarOption {
+    display: flex;
+    align-items: center;
     color: grey;
     cursor: pointer;
     height: 40px;
