@@ -8,3 +8,21 @@
     background-color: #282828;
     padding: 20px
 }
+
+.footer_left {
+    flex: 0.3;
+}
+
+.footer_center {
+    flex: 0.4;
+    color: white;
+    padding: 0 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+}
+
+.footer_right {
+    flex: 0.3;
+}
