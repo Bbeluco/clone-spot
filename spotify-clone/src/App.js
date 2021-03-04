@@ -41,7 +41,7 @@ function App() {
         });
       });
 
-      spotify.getPlaylist('37i9dQZEVXcCCLsOsKbeaF').then(response => { //My own playlist ID
+      spotify.getPlaylist('37i9dQZEVXcCCLsOsKbeaF').then(response => {
         dispatch({
           type: "SET_DISCOVER_WEEKLY",
           discover_weekly: response,

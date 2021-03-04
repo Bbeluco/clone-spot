@@ -3,12 +3,18 @@
     background: linear-gradient(rgb(91,87,115), black);
     height: 100vh;
     color: white;
+    overflow-y: overlay;
     padding: 30px;
+}
+
+.body::-webkit-scrollbar {
+    display: none;
 }
 
 .body_info {
     display: flex;
     align-items: flex-end;
+    padding: 10px
 }
 
 .body_info > img {
@@ -46,4 +52,9 @@
 .body_shuffle:hover {
     transition: 100ms transform ease-in;
     transform: scale(1.08);
+}
+
+.body_songs {
+    z-index: 1;
+    margin: 20px -30px;
 }
