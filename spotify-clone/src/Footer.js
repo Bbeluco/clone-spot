@@ -16,7 +16,7 @@ function Footer() {
     return(
         <div class="footer">
             <div className="footer_left">
-                <img className="album_cover" src="" alt=""/>
+                <img className="album_cover" src={item?.album.images[0].url} alt={item?.name} />
                 <div className="footer_songInfo">
                     <p>{item?.name}</p>
                     <p>{item?.artists.map(artist => artist.name).join(',')}</p>
