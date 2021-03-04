@@ -6,6 +6,7 @@
 
 .header_left {
     flex: 0.5;
+    min-width: 70px;
     background-color: white;
     color: grey;
     display: flex;
@@ -19,9 +20,16 @@
     border: none;
 }
 
+.header_left > input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
 .header_right {
     display: flex;
     align-items: center;
+    margin-left: 10px
 }
 
 .header_right > h4 {
