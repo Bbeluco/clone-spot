@@ -8,16 +8,18 @@ import RepeatIcon from '@material-ui/icons/Repeat';
 import { Grid, Slider} from '@material-ui/core';
 import VolumeDownIcon from '@material-ui/icons/VolumeDown';
 import PlaylistPlayIcon from "@material-ui/icons/PlaylistPlay";
-
+import { useDataLayerValue } from './DataLayer';
 
 function Footer() {
+    const [{ playing, item }, dispatch] = useDataLayerValue();
+    console.log(playing)
     return(
         <div class="footer">
             <div className="footer_left">
                 <img className="album_cover" src="" alt=""/>
                 <div className="footer_songInfo">
-                    <p>Agua rosa</p>
-                    <p>Bbeluco</p>
+                    <p>{item?.name}</p>
+                    <p>{item?.artists.map(artist => artist.name).join(',')}</p>
                 </div>
             </div>
 

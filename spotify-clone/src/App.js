@@ -46,6 +46,20 @@ function App() {
           type: "SET_DISCOVER_WEEKLY",
           discover_weekly: response,
         })
+      });
+
+      spotify.getMyCurrentPlaybackState().then(response => {
+        dispatch({
+          type: 'SET_CURRENT_PLAYBACK',
+          playing: response.is_playing,
+        })
+      })
+
+      spotify.getMyCurrentPlaybackState().then(response => {
+        dispatch({
+          type: 'SET_ITEM',
+          item: response.item
+        })
       })
     }
 
