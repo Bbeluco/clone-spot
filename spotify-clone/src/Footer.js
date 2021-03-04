@@ -10,9 +10,9 @@ import VolumeDownIcon from '@material-ui/icons/VolumeDown';
 import PlaylistPlayIcon from "@material-ui/icons/PlaylistPlay";
 import { useDataLayerValue } from './DataLayer';
 
-function Footer() {
-    const [{ playing, item }, dispatch] = useDataLayerValue();
-    console.log(playing)
+function Footer({ spotify }) {
+    const [{ item }, dispatch] = useDataLayerValue();
+    
     return(
         <div class="footer">
             <div className="footer_left">
